@@ -1,5 +1,5 @@
 package service;
 
-public class MealService {
+public interface MealService {
 
 }

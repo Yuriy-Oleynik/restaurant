@@ -1,5 +1,5 @@
 package repository;
 
-public class MealRepository {
+public interface MealRepository {
 
 }
