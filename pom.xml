@@ -7,7 +7,12 @@
     <groupId>ua.oliinyk.restaurant</groupId>
     <artifactId>restaurant</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>Voting System</name>
+
     <build>
+        <finalName>restaurant</finalName>
+        <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
