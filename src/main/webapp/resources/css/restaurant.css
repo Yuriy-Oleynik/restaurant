@@ -1,0 +1,15 @@
+body {
+    padding-top: 3.5rem;
+
+}
+
+td.details-control {
+    background: url(/resources/images/angle-double-down-solid.svg) no-repeat center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url(/resources/images/angle-double-up-solid.svg) no-repeat center center;
+    background-size: 50% 50%;
+}
