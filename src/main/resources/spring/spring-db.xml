@@ -35,7 +35,7 @@
         <bean id="entityManagerFactory"
               class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
               p:dataSource-ref="dataSource"
-              p:packagesToScan="ua.oliinyk.restaurant.model">
+              p:packagesToScan="model.">
 
             <property name="jpaPropertyMap">
                 <map>
@@ -50,9 +50,9 @@
                     <entry key="#{T(org.hibernate.cfg.AvailableSettings).USE_SECOND_LEVEL_CACHE}" value="true"/>
                     <entry key="#{T(org.hibernate.cfg.AvailableSettings).USE_QUERY_CACHE}" value="false"/>
                     <entry key="javax.persistence.validation.group.pre-persist"
-                           value="ua.oliinyk.restaurant.View$Persist"/>
+                           value="model.View$Persist"/>
                     <entry key="javax.persistence.validation.group.pre-update"
-                           value="ua.oliinyk.restaurant.View$Persist"/>
+                           value="model.View$Persist"/>
                 </map>
             </property>
             <property name="jpaVendorAdapter">
