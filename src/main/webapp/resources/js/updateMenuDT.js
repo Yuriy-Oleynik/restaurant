@@ -2,7 +2,7 @@ var ajaxMealsUrl = '/ajax/meals/';
 
 
 $(document).ready(function () {
-    dataTableApi = $('#admin_menu_datatable').DataTable({
+       dataTableApi = $('#admin_menu_datatable').DataTable({
         ajax: {
             url: 'ajax/meals/today/restaurant/' + restaurantId,
             dataSrc: ''
