@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="FacetManager">
-    <facet type="web" name="Web">
+    <facet type="Spring" name="Spring">
       <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
-        </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
+        <fileset id="fileset" name="Spring Application Context" removed="false" profiles="postgres,springdata">
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-app.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-db.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-security.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-tools.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
