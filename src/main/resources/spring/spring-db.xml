@@ -29,11 +29,13 @@
         />
     </beans>
 
+    <!--java:/PostgresDS   org.apache.tomcat.jdbc.pool.DataSource -->
+
     <beans profile="springdata">
         <bean id="entityManagerFactory"
               class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
               p:dataSource-ref="dataSource"
-              p:packagesToScan="ua.oliinyk.**.model">
+              p:packagesToScan="ua.oliinyk.restaurant.model">
 
             <property name="jpaPropertyMap">
                 <map>
@@ -48,9 +50,9 @@
                     <entry key="#{T(org.hibernate.cfg.AvailableSettings).USE_SECOND_LEVEL_CACHE}" value="true"/>
                     <entry key="#{T(org.hibernate.cfg.AvailableSettings).USE_QUERY_CACHE}" value="false"/>
                     <entry key="javax.persistence.validation.group.pre-persist"
-                           value="ua.ahreshchik.votingsystem.View$Persist"/>
+                           value="ua.oliinyk.restaurant.View$Persist"/>
                     <entry key="javax.persistence.validation.group.pre-update"
-                           value="ua.ahreshchik.votingsystem.View$Persist"/>
+                           value="ua.oliinyk.restaurant.View$Persist"/>
                 </map>
             </property>
             <property name="jpaVendorAdapter">
