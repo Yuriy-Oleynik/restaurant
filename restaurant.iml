@@ -8,6 +8,13 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring/spring-security.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/spring-tools.xml</file>
         </fileset>
+        <fileset id="fileset" name="Spring App" removed="false" profiles="postgres,springdata">
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-app.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-security.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-tools.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-db.xml</file>
+        </fileset>
         <fileset id="web application context" profiles="postgres" autodetected="true" />
         <fileset id="web mvc-dispatcher servlet context" profiles="springdata" autodetected="true" />
       </configuration>
