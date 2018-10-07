@@ -4,7 +4,7 @@
 <html>
 <head>
 
-    <title>Страница входа</title>
+    <title>Login Page</title>
 
     <jsp:include page="fragments/headTagFragments.jsp"/>
 

@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <title>Регистрация</title>
+    <title>Registration</title>
 
     <jsp:include page="fragments/headTagFragments.jsp"/>
 
